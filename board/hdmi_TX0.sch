@@ -1,43 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:pmod
-LIBS:hdmi
-LIBS:ptn3363
-LIBS:ma78l00
-LIBS:pmod-conn_6x2
-LIBS:EEPROM
-LIBS:xc9140
-LIBS:reg710-dbv
-LIBS:pmod-hdmi-tx-cache
-EELAYER 25 0
+EESchema Schematic File Version 4
+LIBS:hdmi-boost-cache
+EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -52,9 +15,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L PTN3363 UTX0
+L hdmi-boost-rescue:PTN3363 UTX0
 U 1 1 57C07746
 P 7450 5400
+AR Path="/57C07746" Ref="UTX0"  Part="1" 
+AR Path="/5802F547/57C07746" Ref="UTX0"  Part="1" 
 F 0 "UTX0" H 7100 6900 60  0000 C CNN
 F 1 "PTN3363" H 7700 3950 60  0000 C CNN
 F 2 "Housings_DFN_QFN:QFN-32-1EP_5x5mm_Pitch0.5mm" H 7350 5600 60  0001 C CNN
@@ -65,9 +30,11 @@ F 5 "568-11580-6-ND" H 7450 5400 60  0001 C CNN "digikey#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L HDMI_OUT JTX0
+L hdmi-boost-rescue:HDMI_OUT JTX0
 U 1 1 57B7B39B
 P 12300 5650
+AR Path="/57B7B39B" Ref="JTX0"  Part="1" 
+AR Path="/5802F547/57B7B39B" Ref="JTX0"  Part="1" 
 F 0 "JTX0" H 12100 6700 60  0000 C CNN
 F 1 "HDMI_OUT" V 12450 5650 60  0000 C CNN
 F 2 "hdmi:HDMI_TH" H 12250 5650 60  0001 C CNN
@@ -141,9 +108,11 @@ HDMIP_TX0_HOT
 Text Label 10750 6550 0    60   ~ 0
 HDMIP_TX0_HOT
 $Comp
-L GND #PWR010
+L hdmi-boost-rescue:GND #PWR010
 U 1 1 57B7C214
 P 7450 7150
+AR Path="/57B7C214" Ref="#PWR010"  Part="1" 
+AR Path="/5802F547/57B7C214" Ref="#PWR010"  Part="1" 
 F 0 "#PWR010" H 7450 6900 60  0001 C CNN
 F 1 "GND" H 7450 7000 60  0000 C CNN
 F 2 "" H 7450 7150 60  0000 C CNN
@@ -152,9 +121,11 @@ F 3 "" H 7450 7150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR011
+L hdmi-boost-rescue:GND #PWR011
 U 1 1 57C0774B
 P 11600 6900
+AR Path="/57C0774B" Ref="#PWR011"  Part="1" 
+AR Path="/5802F547/57C0774B" Ref="#PWR011"  Part="1" 
 F 0 "#PWR011" H 11600 6650 60  0001 C CNN
 F 1 "GND" H 11600 6750 60  0000 C CNN
 F 2 "" H 11600 6900 60  0000 C CNN
@@ -163,9 +134,11 @@ F 3 "" H 11600 6900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D DTX001
+L hdmi-boost-rescue:D DTX001
 U 1 1 57F5F1D1
 P 10600 5440
+AR Path="/57F5F1D1" Ref="DTX001"  Part="1" 
+AR Path="/5802F547/57F5F1D1" Ref="DTX001"  Part="1" 
 F 0 "DTX001" H 10600 5540 50  0000 C CNN
 F 1 "D" H 10600 5340 50  0000 C CNN
 F 2 "Diodes_SMD:SOD-523" H 10600 5440 50  0001 C CNN
@@ -176,7 +149,7 @@ F 5 "BAS16XV2T1GOSCT-ND" H 10600 5440 60  0001 C CNN "digikey#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R RTX008
+L hdmi-boost-rescue:R RTX008
 U 1 1 57C07751
 P 10600 4950
 AR Path="/57C07751" Ref="RTX008"  Part="1" 
@@ -192,7 +165,7 @@ F 5 "RC0402FR-072K2L" V 3900 4400 60  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R RTX002
+L hdmi-boost-rescue:R RTX002
 U 1 1 57C07753
 P 3900 4400
 AR Path="/57C07753" Ref="RTX002"  Part="1" 
@@ -208,7 +181,7 @@ F 5 "RC0402FR-072K2L" V 3900 4400 60  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R RTX001
+L hdmi-boost-rescue:R RTX001
 U 1 1 57C07755
 P 4000 4400
 AR Path="/57C07755" Ref="RTX001"  Part="1" 
@@ -260,7 +233,7 @@ Wire Wire Line
 Wire Wire Line
 	11750 4850 11600 4850
 Wire Wire Line
-	11600 4850 11600 6900
+	11600 4850 11600 5150
 Wire Wire Line
 	11750 5150 11600 5150
 Connection ~ 11600 5150
@@ -297,11 +270,11 @@ Wire Wire Line
 Wire Wire Line
 	6400 5800 6750 5800
 Wire Wire Line
-	8150 6600 9000 6600
+	8150 6600 8550 6600
 Wire Wire Line
 	8150 6400 9000 6400
 Wire Wire Line
-	7400 3750 7500 3750
+	7400 3750 7450 3750
 Wire Wire Line
 	7450 3200 7450 3750
 Connection ~ 7450 3750
@@ -309,7 +282,7 @@ Wire Wire Line
 	11750 6350 11600 6350
 Connection ~ 11600 6350
 Wire Wire Line
-	9800 5950 11750 5950
+	9800 5950 10600 5950
 Wire Wire Line
 	10600 5950 10600 5590
 Wire Wire Line
@@ -332,9 +305,11 @@ Wire Wire Line
 Wire Wire Line
 	5700 6600 6750 6600
 $Comp
-L C_Small CTX001
+L hdmi-boost-rescue:C_Small CTX001
 U 1 1 57B7CD9B
 P 6300 4800
+AR Path="/57B7CD9B" Ref="CTX001"  Part="1" 
+AR Path="/5802F547/57B7CD9B" Ref="CTX001"  Part="1" 
 F 0 "CTX001" V 6265 4840 30  0000 L CNN
 F 1 "0.1uF" V 6270 4665 30  0000 L CNN
 F 2 "Capacitors_SMD:C_0402" H 6300 4800 60  0001 C CNN
@@ -345,9 +320,11 @@ F 5 "GRM155R71C104KA88D" V 6300 4800 60  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L C_Small CTX002
+L hdmi-boost-rescue:C_Small CTX002
 U 1 1 57C07759
 P 6300 4900
+AR Path="/57C07759" Ref="CTX002"  Part="1" 
+AR Path="/5802F547/57C07759" Ref="CTX002"  Part="1" 
 F 0 "CTX002" V 6270 4940 30  0000 L CNN
 F 1 "0.1uF" V 6270 4765 30  0000 L CNN
 F 2 "Capacitors_SMD:C_0402" H 6300 4900 60  0001 C CNN
@@ -376,13 +353,13 @@ Wire Wire Line
 Wire Wire Line
 	4000 4100 4000 4250
 Wire Wire Line
-	3900 4100 4000 4100
+	3900 4100 3950 4100
 Text Label 3800 5900 2    60   ~ 0
 HDMIP_TX0_SCL
 Text Label 3800 6000 2    60   ~ 0
 HDMIP_TX0_SDA
 $Comp
-L R RTX004
+L hdmi-boost-rescue:R RTX004
 U 1 1 57C07769
 P 3900 5600
 AR Path="/57C07769" Ref="RTX004"  Part="1" 
@@ -398,7 +375,7 @@ F 5 "RC0402FR-072K2L" V 3900 4400 60  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R RTX005
+L hdmi-boost-rescue:R RTX005
 U 1 1 57B7FCE7
 P 4000 5600
 AR Path="/57B7FCE7" Ref="RTX005"  Part="1" 
@@ -422,7 +399,7 @@ HDMI_TX0_SCL
 Text Label 5850 6100 0    60   ~ 0
 HDMI_TX0_SDA
 $Comp
-L R RTX003
+L hdmi-boost-rescue:R RTX003
 U 1 1 57C0776D
 P 6500 6900
 AR Path="/57C0776D" Ref="RTX003"  Part="1" 
@@ -440,9 +417,11 @@ $EndComp
 Wire Wire Line
 	6500 6300 6500 6750
 $Comp
-L GND #PWR012
+L hdmi-boost-rescue:GND #PWR012
 U 1 1 57C0776F
 P 6500 7150
+AR Path="/57C0776F" Ref="#PWR012"  Part="1" 
+AR Path="/5802F547/57C0776F" Ref="#PWR012"  Part="1" 
 F 0 "#PWR012" H 6500 6900 60  0001 C CNN
 F 1 "GND" H 6500 7000 60  0000 C CNN
 F 2 "" H 6500 7150 60  0000 C CNN
@@ -450,8 +429,6 @@ F 3 "" H 6500 7150 60  0000 C CNN
 	1    6500 7150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6500 7150 6500 7150
 Text Label 5700 6600 0    60   ~ 0
 HDMI_TX0_HOT
 Text Label 3800 4700 2    60   ~ 0
@@ -487,7 +464,7 @@ Wire Wire Line
 Wire Wire Line
 	3900 5300 3900 5450
 Wire Wire Line
-	3900 5300 4000 5300
+	3900 5300 3950 5300
 Wire Wire Line
 	4000 5300 4000 5450
 Wire Wire Line
@@ -503,9 +480,11 @@ TX05V0
 Text Label 9800 5950 0    60   ~ 0
 HDMI_TX0_CEC
 $Comp
-L C_Small CTX013
+L hdmi-boost-rescue:C_Small CTX013
 U 1 1 57C07774
 P 8550 6850
+AR Path="/57C07774" Ref="CTX013"  Part="1" 
+AR Path="/5802F547/57C07774" Ref="CTX013"  Part="1" 
 F 0 "CTX013" H 8550 6800 30  0000 L CNN
 F 1 "10n" H 8550 6900 30  0000 L CNN
 F 2 "Capacitors_SMD:C_0402" H 8550 6850 60  0001 C CNN
@@ -516,9 +495,11 @@ F 5 "GRM155R71E103KA01D" H 8550 6850 60  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR013
+L hdmi-boost-rescue:GND #PWR013
 U 1 1 57C07776
 P 8550 7150
+AR Path="/57C07776" Ref="#PWR013"  Part="1" 
+AR Path="/5802F547/57C07776" Ref="#PWR013"  Part="1" 
 F 0 "#PWR013" H 8550 6900 60  0001 C CNN
 F 1 "GND" H 8550 7000 60  0000 C CNN
 F 2 "" H 8550 7150 60  0000 C CNN
@@ -533,7 +514,7 @@ Wire Wire Line
 Wire Wire Line
 	7450 7000 7450 7150
 $Comp
-L C CTX017
+L hdmi-boost-rescue:C CTX017
 U 1 1 57C07777
 P 8500 3850
 AR Path="/57C07777" Ref="CTX017"  Part="1" 
@@ -549,7 +530,7 @@ F 5 "GRM155R71C104KA88D" H 8500 3850 60  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L C CTX016
+L hdmi-boost-rescue:C CTX016
 U 1 1 57C07779
 P 8300 3850
 AR Path="/57C07779" Ref="CTX016"  Part="1" 
@@ -565,7 +546,7 @@ F 5 "GRM155R71C104KA88D" H 8300 3850 60  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	8300 3600 8500 3600
+	8300 3600 8400 3600
 Wire Wire Line
 	8300 3600 8300 3700
 Wire Wire Line
@@ -574,13 +555,15 @@ Connection ~ 8400 3600
 Wire Wire Line
 	8300 4000 8300 4100
 Wire Wire Line
-	8300 4100 8500 4100
+	8300 4100 8400 4100
 Wire Wire Line
 	8500 4100 8500 4000
 $Comp
-L GND #PWR014
+L hdmi-boost-rescue:GND #PWR014
 U 1 1 57C0777E
 P 8400 4150
+AR Path="/57C0777E" Ref="#PWR014"  Part="1" 
+AR Path="/5802F547/57C0777E" Ref="#PWR014"  Part="1" 
 F 0 "#PWR014" H 8400 3900 60  0001 C CNN
 F 1 "GND" H 8400 4000 60  0000 C CNN
 F 2 "" H 8400 4150 60  0000 C CNN
@@ -601,9 +584,11 @@ HDMI_TX0_SCL
 Text Label 1885 6670 0    60   ~ 0
 HDMI_TX0_SDA
 $Comp
-L GND #PWR015
+L hdmi-boost-rescue:GND #PWR015
 U 1 1 57C07784
 P 2255 6970
+AR Path="/57C07784" Ref="#PWR015"  Part="1" 
+AR Path="/5802F547/57C07784" Ref="#PWR015"  Part="1" 
 F 0 "#PWR015" H 2255 6720 60  0001 C CNN
 F 1 "GND" H 2255 6820 60  0000 C CNN
 F 2 "" H 2255 6970 60  0000 C CNN
@@ -658,9 +643,9 @@ Wire Wire Line
 Text Notes 670  10960 0    197  ~ 39
 This sheet is generated from ../external/templates/\nDO NOT MODIFY!!!\n8ac8b78
 Wire Wire Line
-	2255 6970 2865 6970
+	2255 6970 2325 6970
 Wire Wire Line
-	2725 7070 2865 7070
+	2725 7070 2770 7070
 Wire Wire Line
 	2865 6570 1885 6570
 Text Label 1885 6570 0    60   ~ 0
@@ -700,9 +685,11 @@ Wire Wire Line
 Text Label 1885 6770 0    60   ~ 0
 HDMI_TX0_EQ0
 $Comp
-L C_Small CTX003
+L hdmi-boost-rescue:C_Small CTX003
 U 1 1 57D7B3E7
 P 6300 5100
+AR Path="/57D7B3E7" Ref="CTX003"  Part="1" 
+AR Path="/5802F547/57D7B3E7" Ref="CTX003"  Part="1" 
 F 0 "CTX003" V 6265 5140 30  0000 L CNN
 F 1 "0.1uF" V 6270 4965 30  0000 L CNN
 F 2 "Capacitors_SMD:C_0402" H 6300 5100 60  0001 C CNN
@@ -713,9 +700,11 @@ F 5 "GRM155R71C104KA88D" V 6300 5100 60  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L C_Small CTX004
+L hdmi-boost-rescue:C_Small CTX004
 U 1 1 57D7B3EF
 P 6300 5200
+AR Path="/57D7B3EF" Ref="CTX004"  Part="1" 
+AR Path="/5802F547/57D7B3EF" Ref="CTX004"  Part="1" 
 F 0 "CTX004" V 6270 5240 30  0000 L CNN
 F 1 "0.1uF" V 6270 5065 30  0000 L CNN
 F 2 "Capacitors_SMD:C_0402" H 6300 5200 60  0001 C CNN
@@ -726,9 +715,11 @@ F 5 "GRM155R71C104KA88D" V 6300 5100 60  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L C_Small CTX005
+L hdmi-boost-rescue:C_Small CTX005
 U 1 1 57D7B73E
 P 6300 5400
+AR Path="/57D7B73E" Ref="CTX005"  Part="1" 
+AR Path="/5802F547/57D7B73E" Ref="CTX005"  Part="1" 
 F 0 "CTX005" V 6265 5440 30  0000 L CNN
 F 1 "0.1uF" V 6270 5265 30  0000 L CNN
 F 2 "Capacitors_SMD:C_0402" H 6300 5400 60  0001 C CNN
@@ -739,9 +730,11 @@ F 5 "GRM155R71C104KA88D" V 6300 5400 60  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L C_Small CTX006
+L hdmi-boost-rescue:C_Small CTX006
 U 1 1 57D7B746
 P 6300 5500
+AR Path="/57D7B746" Ref="CTX006"  Part="1" 
+AR Path="/5802F547/57D7B746" Ref="CTX006"  Part="1" 
 F 0 "CTX006" V 6270 5540 30  0000 L CNN
 F 1 "0.1uF" V 6270 5365 30  0000 L CNN
 F 2 "Capacitors_SMD:C_0402" H 6300 5500 60  0001 C CNN
@@ -752,9 +745,11 @@ F 5 "GRM155R71C104KA88D" V 6300 5400 60  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L C_Small CTX007
+L hdmi-boost-rescue:C_Small CTX007
 U 1 1 57D7B74E
 P 6300 5700
+AR Path="/57D7B74E" Ref="CTX007"  Part="1" 
+AR Path="/5802F547/57D7B74E" Ref="CTX007"  Part="1" 
 F 0 "CTX007" V 6265 5740 30  0000 L CNN
 F 1 "0.1uF" V 6270 5565 30  0000 L CNN
 F 2 "Capacitors_SMD:C_0402" H 6300 5700 60  0001 C CNN
@@ -765,9 +760,11 @@ F 5 "GRM155R71C104KA88D" V 6300 5700 60  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L C_Small CTX008
+L hdmi-boost-rescue:C_Small CTX008
 U 1 1 57D7B756
 P 6300 5800
+AR Path="/57D7B756" Ref="CTX008"  Part="1" 
+AR Path="/5802F547/57D7B756" Ref="CTX008"  Part="1" 
 F 0 "CTX008" V 6270 5840 30  0000 L CNN
 F 1 "0.1uF" V 6270 5665 30  0000 L CNN
 F 2 "Capacitors_SMD:C_0402" H 6300 5800 60  0001 C CNN
@@ -780,11 +777,13 @@ $EndComp
 Text GLabel 7025 3200 0    60   Input ~ 0
 VCC3V3
 Wire Wire Line
-	7025 3200 8400 3200
+	7025 3200 7450 3200
 $Comp
-L PMOD-CONN_6X2 PTX0
+L hdmi-boost-rescue:PMOD-CONN_6X2 PTX0
 U 1 1 57F5BF4E
 P 3265 6820
+AR Path="/57F5BF4E" Ref="PTX0"  Part="1" 
+AR Path="/5802F547/57F5BF4E" Ref="PTX0"  Part="1" 
 F 0 "PTX0" H 3265 7170 60  0000 C CNN
 F 1 "PMOD-CONN_6X2" V 3265 6820 39  0000 C CNN
 F 2 "pmod:pmod_pin_array_6x2" H 3265 6820 60  0001 C CNN
@@ -827,4 +826,32 @@ Text Label 6550 5700 0    20   ~ 0
 HDMIA_TX0_D2+
 Text Label 6550 5800 0    20   ~ 0
 HDMIA_TX0_D2-
+Wire Wire Line
+	11600 5150 11600 5450
+Wire Wire Line
+	11600 5450 11600 5750
+Wire Wire Line
+	11600 5750 11600 6350
+Wire Wire Line
+	7450 3750 7500 3750
+Wire Wire Line
+	11600 6350 11600 6900
+Wire Wire Line
+	10600 5950 11750 5950
+Wire Wire Line
+	3950 5300 4000 5300
+Wire Wire Line
+	3950 4100 4000 4100
+Wire Wire Line
+	8400 3600 8500 3600
+Wire Wire Line
+	8400 4100 8500 4100
+Wire Wire Line
+	8550 6600 9000 6600
+Wire Wire Line
+	2770 7070 2865 7070
+Wire Wire Line
+	2325 6970 2865 6970
+Wire Wire Line
+	7450 3200 8400 3200
 $EndSCHEMATC

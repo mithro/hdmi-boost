@@ -1,36 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Device_R_Shunt_US
+# C
 #
-DEF Device_R_Shunt_US R 0 0 N Y 1 F N
-F0 "R" -200 0 50 V V C CNN
-F1 "Device_R_Shunt_US" -120 0 50 V V C CNN
-F2 "" -70 0 50 V I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- R_*Shunt*
-$ENDFPLIST
-DRAW
-P 2 1 1 0 0 -100 50 -100 N
-P 2 1 1 0 0 -90 0 -100 N
-P 2 1 1 0 0 90 0 100 N
-P 2 1 1 0 50 100 0 100 N
-P 5 1 1 0 0 -30 40 -45 0 -60 -40 -75 0 -90 N
-P 5 1 1 0 0 30 40 15 0 0 -40 -15 0 -30 N
-P 5 1 1 0 0 90 40 75 0 60 -40 45 0 30 N
-X 1 1 0 200 100 D 50 50 1 1 P
-X 2 2 150 100 100 L 50 50 1 1 P
-X 3 3 150 -100 100 L 50 50 1 1 P
-X 4 4 0 -200 100 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# hdmi-boost-rescue_C
-#
-DEF hdmi-boost-rescue_C C 0 10 N Y 1 F N
+DEF C C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "hdmi-boost-rescue_C" 25 -100 50 H V L CNN
+F1 "C" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -48,11 +23,11 @@ X ~ 2 0 -150 110 U 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# hdmi-boost-rescue_C_Small
+# C_Small
 #
-DEF hdmi-boost-rescue_C_Small C 0 10 N N 1 F N
+DEF C_Small C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "hdmi-boost-rescue_C_Small" 10 -80 50 H V L CNN
+F1 "C_Small" 10 -80 50 H V L CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -70,11 +45,11 @@ X ~ 2 0 -100 80 U 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# hdmi-boost-rescue_D
+# D
 #
-DEF hdmi-boost-rescue_D D 0 40 N N 1 F N
+DEF D D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "hdmi-boost-rescue_D" 0 -100 50 H V C CNN
+F1 "D" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -92,11 +67,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# hdmi-boost-rescue_GND
+# GND
 #
-DEF hdmi-boost-rescue_GND #PWR 0 0 Y Y 1 F P
+DEF GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "hdmi-boost-rescue_GND" 0 -150 50 H V C CNN
+F1 "GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 DRAW
@@ -105,11 +80,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# hdmi-boost-rescue_HDMI_IN
+# HDMI_IN
 #
-DEF hdmi-boost-rescue_HDMI_IN J 0 40 Y Y 1 F N
+DEF HDMI_IN J 0 40 Y Y 1 F N
 F0 "J" -300 1050 60 H V C CNN
-F1 "hdmi-boost-rescue_HDMI_IN" 150 0 60 V V C CNN
+F1 "HDMI_IN" 150 0 60 V V C CNN
 F2 "" -50 0 60 H V C CNN
 F3 "" -50 0 60 H V C CNN
 DRAW
@@ -138,11 +113,11 @@ X D0- 9 -550 100 197 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# hdmi-boost-rescue_HDMI_OUT
+# HDMI_OUT
 #
-DEF hdmi-boost-rescue_HDMI_OUT J 0 40 Y Y 1 F N
+DEF HDMI_OUT J 0 40 Y Y 1 F N
 F0 "J" -300 1050 60 H V C CNN
-F1 "hdmi-boost-rescue_HDMI_OUT" 150 0 60 V V C CNN
+F1 "HDMI_OUT" 150 0 60 V V C CNN
 F2 "" -50 0 60 H V C CNN
 F3 "" -50 0 60 H V C CNN
 DRAW
@@ -171,11 +146,11 @@ X D0- 9 -550 100 197 R 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# hdmi-boost-rescue_INDUCTOR
+# INDUCTOR
 #
-DEF hdmi-boost-rescue_INDUCTOR L 0 40 N N 1 F N
+DEF INDUCTOR L 0 40 N N 1 F N
 F0 "L" -50 0 50 V V C CNN
-F1 "hdmi-boost-rescue_INDUCTOR" 100 0 50 V V C CNN
+F1 "INDUCTOR" 100 0 50 V V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 DRAW
@@ -188,11 +163,11 @@ X 2 2 0 -300 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# hdmi-boost-rescue_PMOD-CONN_6X2
+# PMOD-CONN_6X2
 #
-DEF hdmi-boost-rescue_PMOD-CONN_6X2 P 0 40 Y N 1 F N
+DEF PMOD-CONN_6X2 P 0 40 Y N 1 F N
 F0 "P" 0 350 60 H V C CNN
-F1 "hdmi-boost-rescue_PMOD-CONN_6X2" 0 0 39 V V C CNN
+F1 "PMOD-CONN_6X2" 0 0 39 V V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -220,11 +195,62 @@ X P9 9 400 50 300 L 60 60 1 1 P I
 ENDDRAW
 ENDDEF
 #
-# hdmi-boost-rescue_PTN3363
+# PMOD-Device-x2-Type-XHS-Alt
 #
-DEF hdmi-boost-rescue_PTN3363 U 0 40 Y Y 1 F N
+DEF PMOD-Device-x2-Type-XHS-Alt P 0 40 Y N 1 F N
+F0 "P" 100 650 60 H V C CNN
+F1 "PMOD-Device-x2-Type-XHS-Alt" 90 -40 39 H V C CNN
+F2 "pmod-conn_6x2:pmod_pin_array_6x2" 100 -110 39 H I C CNN
+F3 "" 100 300 60 H V C CNN
+DRAW
+T 0 -160 680 10 0 0 0 "(Pins closest to edge)" Normal 0 C T
+T 0 345 680 10 0 0 0 "(Pins furthest from edge)" Normal 0 C T
+T 0 140 500 59 0 0 0 1 Normal 0 C C
+T 0 140 300 59 0 0 0 2 Normal 0 C C
+T 0 60 500 59 0 0 0 3 Normal 0 C C
+T 0 60 300 59 0 0 0 4 Normal 0 C C
+T 0 -160 720 30 0 0 0 "BOTTOM ROW" Normal 0 C T
+T 0 -250 175 20 0 0 0 GND Normal 0 C C
+T 0 450 175 20 0 0 0 GND Normal 0 C C
+T 0 50 250 20 0 0 0 N Normal 0 C C
+T 0 50 450 20 0 0 0 N Normal 0 C C
+T 0 150 250 20 0 0 0 N Normal 0 C C
+T 0 150 450 20 0 0 0 N Normal 0 C C
+T 0 50 350 20 0 0 0 P Normal 0 C C
+T 0 50 550 20 0 0 0 P Normal 0 C C
+T 0 150 350 20 0 0 0 P Normal 0 C C
+T 0 150 550 20 0 0 0 P Normal 0 C C
+T 0 345 720 30 0 0 0 "TOP ROW" Normal 0 C T
+T 0 -250 75 20 0 0 0 VCC Normal 0 C C
+T 0 450 75 20 0 0 0 VCC Normal 0 C C
+S 0 350 30 250 0 0 0 N
+S 0 550 30 440 0 0 0 N
+S 200 350 170 250 0 0 0 N
+S 200 450 170 550 0 0 0 N
+S 200 600 0 0 0 1 0 N
+P 2 0 0 0 0 400 200 400 N
+P 2 0 0 0 100 600 100 0 N
+P 2 0 0 0 200 200 0 200 N
+X JA1_P 1 500 550 300 L 60 60 1 1 P
+X JA4_N 10 -300 250 300 R 60 60 1 1 P I
+X P11 11 -300 150 300 R 60 60 1 1 P X
+X P12 12 -300 50 300 R 60 60 1 1 P X
+X JA1_N 2 500 450 300 L 60 60 1 1 P I
+X JA2_P 3 500 350 300 L 60 60 1 1 P
+X JA2_N 4 500 250 300 L 60 60 1 1 P I
+X P5 5 500 150 300 L 60 60 1 1 P X
+X P6 6 500 50 300 L 60 60 1 1 P X
+X JA3_P 7 -300 550 300 R 60 60 1 1 P
+X JA3_N 8 -300 450 300 R 60 60 1 1 P I
+X JA4_P 9 -300 350 300 R 60 60 1 1 P
+ENDDRAW
+ENDDEF
+#
+# PTN3363
+#
+DEF PTN3363 U 0 40 Y Y 1 F N
 F0 "U" -450 1550 60 H V C CNN
-F1 "hdmi-boost-rescue_PTN3363" 250 -1450 60 H V C CNN
+F1 "PTN3363" 250 -1450 60 H V C CNN
 F2 "" -100 200 60 H V C CNN
 F3 "" -100 200 60 H V C CNN
 DRAW
@@ -275,11 +301,11 @@ X OUT_D4+ 9 700 -1150 200 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# hdmi-boost-rescue_R
+# R
 #
-DEF hdmi-boost-rescue_R R 0 0 N Y 1 F N
+DEF R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "hdmi-boost-rescue_R" 0 0 50 V V C CNN
+F1 "R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -293,11 +319,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# hdmi-boost-rescue_REG710-DBV
+# REG710-DBV
 #
-DEF hdmi-boost-rescue_REG710-DBV U 0 40 Y Y 1 F N
+DEF REG710-DBV U 0 40 Y Y 1 F N
 F0 "U" 50 -50 60 H V C CNN
-F1 "hdmi-boost-rescue_REG710-DBV" 300 550 60 H V C CNN
+F1 "REG710-DBV" 300 550 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -311,11 +337,11 @@ X CP 6 900 400 200 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# hdmi-boost-rescue_VCC
+# VCC
 #
-DEF hdmi-boost-rescue_VCC #PWR 0 0 Y Y 1 F P
+DEF VCC #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "hdmi-boost-rescue_VCC" 0 150 50 H V C CNN
+F1 "VCC" 0 150 50 H V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 DRAW
@@ -325,11 +351,11 @@ X VCC 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# hdmi-boost-rescue_XC9140
+# XC9140
 #
-DEF hdmi-boost-rescue_XC9140 U 0 40 Y Y 1 F N
+DEF XC9140 U 0 40 Y Y 1 F N
 F0 "U" 600 550 60 H V C CNN
-F1 "hdmi-boost-rescue_XC9140" 550 -50 60 H V C CNN
+F1 "XC9140" 550 -50 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW

@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name hdmi-boost-rescue)(type Legacy)(uri ${KIPRJMOD}/hdmi-boost-rescue.lib)(options "")(descr ""))
+)
