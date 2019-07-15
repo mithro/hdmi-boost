@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name hdmi-boost-rescue)(type Legacy)(uri ${KIPRJMOD}/hdmi-boost-rescue.lib)(options "")(descr ""))
+  (lib (name efm32hg309)(type Legacy)(uri /home/tansell/github/mithro/hdmi-boost/board/efm32hg309.lib)(options "")(descr ""))
 )

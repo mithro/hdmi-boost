@@ -1797,4 +1797,163 @@ Connection ~ 21000 8300
 Wire Wire Line
 	25800 8300 25800 8500
 Connection ~ 25800 8300
+$Comp
+L efm32hg309:EFM32HG309 U?
+U 1 1 5E199B4B
+P 16000 8100
+F 0 "U?" H 16450 9465 60  0000 C CNN
+F 1 "EFM32HG309" H 16450 9375 39  0000 C CNN
+F 2 "" H 16000 8100 60  0000 C CNN
+F 3 "" H 16000 8100 60  0000 C CNN
+	1    16000 8100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14000 8200 13350 8200
+Wire Wire Line
+	14000 8300 13350 8300
+Text Label 13350 8200 0    50   ~ 0
+USART0_RX
+Text Label 13350 8300 0    50   ~ 0
+USART0_TX
+Wire Wire Line
+	14950 8900 14300 8900
+Wire Wire Line
+	14300 9000 14950 9000
+Text Label 14300 8900 0    50   ~ 0
+USART1_RX
+Text Label 14300 9000 0    50   ~ 0
+USART1_TX
+Wire Wire Line
+	14950 8200 14300 8200
+Wire Wire Line
+	14300 8300 14950 8300
+Wire Wire Line
+	14000 8900 13350 8900
+Wire Wire Line
+	13350 9000 14000 9000
+Text Label 14300 8200 0    50   ~ 0
+I2C0_SDA
+Text Label 14300 8300 0    50   ~ 0
+I2C0_SCK
+Text Label 13350 8900 0    50   ~ 0
+I2C1_SDA
+Text Label 13350 9000 0    50   ~ 0
+I2C1_SCK
+Wire Wire Line
+	17350 7000 17850 7000
+Wire Wire Line
+	17350 7100 17850 7100
+Text Label 17350 7000 0    50   ~ 0
+USB_P
+Text Label 17350 7100 0    50   ~ 0
+USB_N
+Wire Wire Line
+	14950 7400 14600 7400
+Wire Wire Line
+	14600 7500 14950 7500
+Wire Wire Line
+	14600 7750 14950 7750
+Wire Wire Line
+	14600 7850 14950 7850
+Text Label 14600 7400 0    50   ~ 0
+RX_V
+Text Label 14600 7500 0    50   ~ 0
+RX_I
+Text Label 14600 7750 0    50   ~ 0
+TX_V
+Text Label 14600 7850 0    50   ~ 0
+TX_I
+Wire Wire Line
+	14950 6950 14600 6950
+Wire Wire Line
+	14600 6850 14950 6850
+Wire Wire Line
+	14950 6750 14600 6750
+Wire Wire Line
+	14950 6250 14600 6250
+Wire Wire Line
+	14950 6150 14600 6150
+Wire Wire Line
+	14950 6050 14600 6050
+Text Label 14600 6750 0    50   ~ 0
+TX_EQ0
+Text Label 14600 6850 0    50   ~ 0
+TX_EQ1
+Text Label 14600 6950 0    50   ~ 0
+TX_EQ2
+Text Label 14600 6050 0    50   ~ 0
+RX_EQ0
+Text Label 14600 6150 0    50   ~ 0
+RX_EQ1
+Text Label 14600 6250 0    50   ~ 0
+RX_EQ2
+Wire Wire Line
+	13350 8550 14000 8550
+Wire Wire Line
+	13350 9250 14000 9250
+Text Label 13350 8550 0    50   ~ 0
+RX_HPD
+Text Label 13350 9250 0    50   ~ 0
+TX_HPD
+Wire Wire Line
+	14300 8550 14950 8550
+Wire Wire Line
+	14300 9250 14950 9250
+Text Label 14300 8550 0    50   ~ 0
+RX_P_HPD
+Text Label 14300 9250 0    50   ~ 0
+TX_P_HPD
+Wire Wire Line
+	14950 6350 14600 6350
+Wire Wire Line
+	14950 7050 14600 7050
+Text Label 14600 6350 0    50   ~ 0
+RX_OE
+Text Label 14600 7050 0    50   ~ 0
+TX_OE
+Wire Wire Line
+	14950 6450 14600 6450
+Wire Wire Line
+	14600 7150 14950 7150
+Text Label 14600 6450 0    50   ~ 0
+RX_HIZ
+Text Label 14600 7150 0    50   ~ 0
+TX_HIZ
+Wire Wire Line
+	14000 8650 13350 8650
+Wire Wire Line
+	14950 9350 14300 9350
+Wire Wire Line
+	14950 8650 14300 8650
+Wire Wire Line
+	13350 9350 14000 9350
+Text Label 13350 8650 0    50   ~ 0
+JRX0_CEC
+Text Label 14300 8650 0    50   ~ 0
+JRX1_CEC
+Text Label 13350 9350 0    50   ~ 0
+JTX0_CEC
+Text Label 14300 9350 0    50   ~ 0
+JTX1_CEC
+Text Notes 14100 7400 0    50   ~ 0
+RX Voltage\n
+Text Notes 14100 7500 0    50   ~ 0
+RX Current
+Text Notes 14100 7750 0    50   ~ 0
+TX Voltage
+Text Notes 14100 7850 0    50   ~ 0
+TX Current
+Text Notes 15050 5950 2    50   ~ 0
+PTN3363 RX Control
+Text Notes 15050 6650 2    50   ~ 0
+PTN3363 TX Control
+Wire Notes Line
+	14150 8050 14150 9544
+Wire Notes Line
+	14150 9544 14132 9544
+Text Notes 13350 8050 0    50   ~ 0
+Opsis Side
+Wire Notes Line
+	15150 8750 13150 8750
 $EndSCHEMATC
