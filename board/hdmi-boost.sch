@@ -27,91 +27,8 @@ F 3 "" H 4700 1100 50  0000 C CNN
 	1    4700 1100
 	1    0    0    -1  
 $EndComp
-$Comp
-L hdmi-boost-rescue:XC9140 U31
-U 1 1 5803B328
-P 2100 6925
-F 0 "U31" H 2700 7475 60  0000 C CNN
-F 1 "XC9140" H 2650 6875 60  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 2100 6925 60  0001 C CNN
-F 3 "" H 2100 6925 60  0001 C CNN
-	1    2100 6925
-	1    0    0    -1  
-$EndComp
-$Comp
-L hdmi-boost-rescue:INDUCTOR L31
-U 1 1 5803B5D8
-P 1350 6525
-F 0 "L31" V 1300 6525 50  0000 C CNN
-F 1 "4.7uH" V 1450 6525 50  0000 C CNN
-F 2 "Inductors_NEOSID:Neosid_Inductor_SM0603CG" H 1350 6525 50  0001 C CNN
-F 3 "" H 1350 6525 50  0000 C CNN
-	1    1350 6525
-	0    -1   -1   0   
-$EndComp
-$Comp
-L hdmi-boost-rescue:R R31
-U 1 1 5803B7C8
-P 1350 6675
-F 0 "R31" V 1430 6675 50  0000 C CNN
-F 1 "4.7k" V 1350 6675 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 1280 6675 50  0001 C CNN
-F 3 "" H 1350 6675 50  0000 C CNN
-	1    1350 6675
-	0    1    1    0   
-$EndComp
-$Comp
-L hdmi-boost-rescue:VCC #PWR04
-U 1 1 5803BD68
-P 800 6725
-F 0 "#PWR04" H 800 6575 50  0001 C CNN
-F 1 "VCC" H 800 6875 50  0000 C CNN
-F 2 "" H 800 6725 50  0000 C CNN
-F 3 "" H 800 6725 50  0000 C CNN
-	1    800  6725
-	1    0    0    -1  
-$EndComp
-$Comp
-L hdmi-boost-rescue:C C311
-U 1 1 5803BE39
-P 950 7075
-F 0 "C311" H 975 7175 50  0000 L CNN
-F 1 "4.7uF" H 975 6975 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 988 6925 50  0001 C CNN
-F 3 "" H 950 7075 50  0000 C CNN
-	1    950  7075
-	1    0    0    -1  
-$EndComp
-$Comp
-L hdmi-boost-rescue:C CV5
-U 1 1 5803BFAE
-P 3550 6775
-F 0 "CV5" H 3575 6875 50  0000 L CNN
-F 1 "10uF" H 3575 6675 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 3588 6625 50  0001 C CNN
-F 3 "" H 3550 6775 50  0000 C CNN
-	1    3550 6775
-	1    0    0    -1  
-$EndComp
-Text GLabel 3550 6000 2    60   Input ~ 0
-TX05V0
 Text GLabel 5250 1125 2    60   Input ~ 0
 VCC3V3
-Text Label 3550 6075 3    60   ~ 0
-TX05V0
-$Comp
-L hdmi-boost-rescue:GND #PWR05
-U 1 1 5803DE38
-P 3550 7400
-F 0 "#PWR05" H 3550 7150 50  0001 C CNN
-F 1 "GND" H 3550 7250 50  0000 C CNN
-F 2 "" H 3550 7400 50  0000 C CNN
-F 3 "" H 3550 7400 50  0000 C CNN
-	1    3550 7400
-	1    0    0    -1  
-$EndComp
-Text Notes 700  6225 0    60   ~ 0
-Option 1\n
 Text Label 8125 1500 0    60   ~ 0
 HDMI_TX0_SCL
 Text Label 8125 1600 0    60   ~ 0
@@ -226,65 +143,6 @@ F 3 "" H 6600 3175 50  0000 C CNN
 $EndComp
 Text Notes 7075 3100 0    60   ~ 0
 By default, EQ0 and EQ1\nare pulled to VCC\ngiving 6dB equalization
-$Comp
-L hdmi-boost-rescue:REG710-DBV U32
-U 1 1 5803BF4F
-P 5600 6925
-F 0 "U32" H 5650 6875 60  0000 C CNN
-F 1 "REG710-DBV" H 5900 7475 60  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 5600 6925 60  0001 C CNN
-F 3 "" H 5600 6925 60  0001 C CNN
-	1    5600 6925
-	-1   0    0    -1  
-$EndComp
-$Comp
-L hdmi-boost-rescue:VCC #PWR09
-U 1 1 5803C0E2
-P 6325 6500
-F 0 "#PWR09" H 6325 6350 50  0001 C CNN
-F 1 "VCC" H 6325 6650 50  0000 C CNN
-F 2 "" H 6325 6500 50  0000 C CNN
-F 3 "" H 6325 6500 50  0000 C CNN
-	1    6325 6500
-	-1   0    0    -1  
-$EndComp
-$Comp
-L hdmi-boost-rescue:C C322
-U 1 1 5803C17C
-P 6050 7000
-F 0 "C322" H 6075 7100 50  0000 L CNN
-F 1 "2.2uF" H 6075 6900 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 6088 6850 50  0001 C CNN
-F 3 "" H 6050 7000 50  0000 C CNN
-	1    6050 7000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L hdmi-boost-rescue:C_Small C321
-U 1 1 5803CD16
-P 4525 6525
-F 0 "C321" V 4650 6300 50  0000 L CNN
-F 1 "220n" V 4575 6300 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 4525 6525 50  0001 C CNN
-F 3 "" H 4525 6525 50  0000 C CNN
-	1    4525 6525
-	0    1    -1   0   
-$EndComp
-Text Notes 4000 6225 0    60   ~ 0
-Option 2
-$Comp
-L hdmi-boost-rescue:R R32
-U 1 1 580409A1
-P 6075 6575
-F 0 "R32" V 6000 6575 39  0000 C CNN
-F 1 "10k" V 6075 6575 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 6005 6575 50  0001 C CNN
-F 3 "" H 6075 6575 50  0000 C CNN
-	1    6075 6575
-	0    -1   1    0   
-$EndComp
-Text Notes 650  5850 0    79   ~ 16
-3.3V to 5V Voltage Booster\nLoad only *one* option\n
 Wire Wire Line
 	6250 2000 7275 2000
 Wire Wire Line
@@ -299,43 +157,6 @@ Wire Wire Line
 	6250 2600 6925 2600
 Wire Wire Line
 	4700 1125 5250 1125
-Wire Wire Line
-	1900 6525 1650 6525
-Wire Wire Line
-	1900 6675 1500 6675
-Wire Wire Line
-	800  6825 950  6825
-Wire Wire Line
-	950  6525 950  6675
-Wire Wire Line
-	950  6525 1050 6525
-Wire Wire Line
-	1200 6675 950  6675
-Connection ~ 950  6675
-Wire Wire Line
-	800  6825 800  6725
-Connection ~ 950  6825
-Wire Wire Line
-	3000 6575 3550 6575
-Connection ~ 3550 6575
-Wire Wire Line
-	3000 6775 3050 6775
-Wire Wire Line
-	3050 6775 3050 7275
-Wire Wire Line
-	3550 6925 3550 7275
-Wire Notes Line
-	650  6275 3200 6275
-Wire Notes Line
-	3200 6275 3200 7450
-Wire Notes Line
-	3200 7450 650  7450
-Wire Notes Line
-	650  7450 650  6275
-Wire Wire Line
-	950  7225 950  7275
-Wire Wire Line
-	950  7275 3050 7275
 Wire Wire Line
 	6250 1500 8125 1500
 Wire Wire Line
@@ -390,53 +211,6 @@ Wire Wire Line
 Wire Wire Line
 	6850 3175 6850 3275
 Connection ~ 6850 3175
-Wire Wire Line
-	6325 6775 6050 6775
-Wire Wire Line
-	6325 6500 6325 6575
-Wire Wire Line
-	4625 6525 4700 6525
-Wire Wire Line
-	4700 6675 4325 6675
-Wire Wire Line
-	4325 6675 4325 6525
-Wire Wire Line
-	4325 6525 4425 6525
-Wire Wire Line
-	6050 7275 6050 7150
-Wire Wire Line
-	6050 6850 6050 6775
-Connection ~ 6050 6775
-Wire Wire Line
-	5250 7125 5250 7275
-Connection ~ 5250 7275
-Connection ~ 3050 7275
-Connection ~ 3550 7275
-Wire Wire Line
-	4700 6825 4175 6825
-Wire Wire Line
-	4175 6825 4175 6575
-Wire Notes Line
-	3950 6275 6500 6275
-Wire Notes Line
-	6500 6275 6500 7450
-Wire Notes Line
-	6500 7450 3950 7450
-Wire Notes Line
-	3950 7450 3950 6275
-Wire Wire Line
-	3550 6000 3550 6575
-Wire Wire Line
-	6225 6575 6325 6575
-Connection ~ 6325 6575
-Wire Wire Line
-	5925 6575 5800 6575
-Wire Notes Line
-	575  5550 6575 5550
-Wire Notes Line
-	6575 5550 6575 7625
-Wire Notes Line
-	6575 7625 575  7625
 Wire Notes Line
 	575  7625 575  5550
 Wire Wire Line
@@ -445,16 +219,6 @@ Wire Wire Line
 	6600 3275 6850 3275
 Wire Wire Line
 	4700 1125 4700 1100
-Wire Wire Line
-	950  6675 950  6825
-Wire Wire Line
-	950  6825 1900 6825
-Wire Wire Line
-	950  6825 950  6925
-Wire Wire Line
-	3550 6575 4175 6575
-Wire Wire Line
-	3550 6575 3550 6625
 Wire Wire Line
 	6875 2250 7975 2250
 Wire Wire Line
@@ -469,18 +233,6 @@ Wire Wire Line
 	6925 2600 7975 2600
 Wire Wire Line
 	6850 3175 6925 3175
-Wire Wire Line
-	6050 6775 5800 6775
-Wire Wire Line
-	5250 7275 6050 7275
-Wire Wire Line
-	3050 7275 3550 7275
-Wire Wire Line
-	3550 7275 3550 7400
-Wire Wire Line
-	3550 7275 5250 7275
-Wire Wire Line
-	6325 6575 6325 6775
 $Comp
 L hdmi-boost-rescue:HDMI_OUT JTX?
 U 1 1 5D23B8EF
